@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --yellow: hsl(47, 88%, 63%);
+      --white: hsl(0, 0%, 100%);
+      --gray-500: hsl(0, 0%, 42%);
+      --gray-950: hsl(0, 0%, 7%);
+    }
+
+    .figtree-500 {
+      font-family: "Figtree", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .figtree-800, h1 {
+      font-family: "Figtree", serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    main {
+      background-color: var(--yellow);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    article {
+      background-color: var(--white);
+      border: 1px solid black;
+      box-shadow: 8px 8px rgba(0, 0, 0, 1);
+      width: 320px;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    article > img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    article > .badge {
+      padding: 6px 14px;
+      border-radius: 6px;
+      background-color: var(--yellow);
+      width: auto;
+      display: inline-block;
+    }
+
+    article > .date {
+      margin-top: 16px;
+    }
+
+    article > .content {
+      color: var(--gray-500);
+    }
+
+    article > .author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    article > .author > img {
+      width: 32px;
+    }
+
+    article > .author > span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <article>
+      <img src="assets/images/illustration-article.svg" alt="illustration article" />
+      <span class="badge figtree-800">Learning</span>
+
+      <div class="date figtree-500">Published 21 Dec 2023</div>
+    
+      <h1>HTML & CSS foundations</h1>
+    
+      <p class="content figtree-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    
+      <div class="author">
+        <img src="assets/images/image-avatar.webp" alt="Image of author of article" />
+        <span class="figtree-500">Greg Hooper</span>
+      </div>
+    </article>
+  </main>
+  
+</body>
+</html>
